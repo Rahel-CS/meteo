@@ -12,24 +12,27 @@
   <body>
     <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city....." required/>
-            <input type="submit" value="search"/>
+        <form class="search-form
+        "> 
+            <input type="search" placeholder="Enter a city....." required class="search-form-input"/>
+            <input type="submit" value="search" class="search-form-button"/>
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-        <h1>Ethiopia</h1>
-        <p>
+        <h1 class="weather-app-city">Ethiopia</h1>
+        <p class="weather-app-details">
             Monday 2:36, scattered cloudy
 <br  />
-Humidity :70%, wind:  4.1km/h
+Humidity: <strong>70%</strong>, wind:  <strong>4.1km/h</strong>
         </p>
     </div>
-        <div>🌤️ 12 °C</div>
+        <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️ </div> <div class="weather-app-temerature "></div>12 <div class="weather-app-unit">°C</div>
         
     </main>
-    
+
     <footer>
       Coded by
       <a href="https://github.com/Rahel-CS" target="_blank">RahelHabtamu</a>
@@ -40,6 +43,7 @@ Humidity :70%, wind:  4.1km/h
         >netlify</a
       >
     </footer>
+</div>
 </div>
   </body>
 </html>
